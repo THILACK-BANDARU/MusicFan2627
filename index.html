@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmitha - Music Lover's Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Yasmitha</h1>
+            <p>A Tribute to Music and Friendship</p>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Enter song name or lyrics..." oninput="suggestSongs()">
+                <select id="languageSelect">
+                    <option value="all">All</option>
+                    <option value="IN">Telugu</option>
+                    <option value="IN">Hindi</option>
+                    <option value="US">English</option>
+                </select>
+                <button onclick="searchSong()">Search Song</button>
+            </div>
+            <ul id="suggestionList" class="suggestion-list"></ul>
+            <div class="song-list" id="songList">
+                <!-- List of songs will be displayed here -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
